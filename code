@@ -4,8 +4,8 @@
 
 // Setting the background image. Several images are allowed and used to show different levels (or floors) of the map
 
-levels[0] = "\some\path\pictures1.jpg"
-levels[1] = "\some\path\pictures2.jpg"
+levels[0] = "\some\path\pictures1.jpg";
+levels[1] = "\some\path\pictures2.jpg";
 
 // If no images are selected the background will be white.
 
