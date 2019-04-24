@@ -1,0 +1,150 @@
+// Code example for Tactic
+// The purpose of this code example is to showcase the language and it can be used as a test for the parser.
+
+
+// Setting the background image. Several images are allowed and used to show different levels (or floors) of the map
+
+levels[0] = "\some\path\pictures1.jpg"
+levels[1] = "\some\path\pictures2.jpg"
+
+// If no images are selected the background will be white.
+
+// Declaration
+int temp_int;
+float temp_float;
+bool temp_bool;
+string_temp;
+vector temp_vector;
+GamePiece temp_GamePiece;
+
+
+// Build-in types
+// Int
+int int_test1 = 2;
+int int_test2 = int_test1 + 3;
+int int_add_test = int_test1 + int_test2;
+int int_sub_test = int_test1 - int_test2;
+int int_mul_test = int_test1 * int_test2;
+int int_div_test = int_test1 / int_test2;
+int int_mod_test = int_test1 % int_test2;
+temp_bool = int_test1 < int_test2;
+temp_bool = int_test1 > int_test2;
+temp_bool = int_test1 == int_test2;
+
+// Float
+float float_test1 = 2.4;
+float float_test2 = float_test1 + 4.3;
+float float_add_test = float_test1 + float_test2;
+float float_sub_test = float_test1 - float_test2;
+float float_mul_test = float_test1 * float_test2;
+float float_div_test = float_test1 / float_test2;
+temp_bool = float_test1 < float_test2;
+temp_bool = float_test1 > float_test2;
+temp_bool = float_test1 == float_test2;
+
+// Bool
+bool bool_test1 = true;
+bool bool_test2 = false;
+bool bool_or_test = bool_test1 + bool_test2;
+bool bool_and_test = bool_test1 * bool_test2;
+bool bool_not_test = !true;
+temp_bool = bool_test1 == bool_test2;
+
+//String
+string string_test1 = "";
+strign string_test2 = "qwerty";
+bool_temp = string_test1 == string_test2;
+
+// Vector
+vector vector_test1 = (1, 2);
+vector vector_test2 = (4, 3, 5);
+vector vector_add_test = vector_test1 + vector_test2;
+vector vector_sub_test = vector_test1 - vector_test2;
+bool_temp = vector_test1 == vector_test2;
+
+//vector vector_mul_test = vector_test1 * vector_test2;
+//magnitude
+//scaling
+//dot
+//cross
+
+// GamePieces
+// Only object that needs seperate declaration.
+GamePiece gp_test1;
+gp_test1.postion = (1,2);
+gp_test1.size = 5;
+gp_test1.color = "";
+gp_test1.opasity = 0.5;
+gp_test1.label = "label_text";
+gp_test1.shape = "";
+ 
+ 
+// List
+List<int> list_int_test;
+List<float> list_float_test;
+List<bool> list_bool_test;
+List<vector> list_vector_test;
+List<GamePiece> list_gp_test;
+List<List<int>>;
+
+list_int_test.Add(5);
+list_int_test[1] = 4;
+temp_int = list_int_test[1];
+list_int_test.RemoveAt(1);
+temp_int = list_int_test.Size();
+
+
+// Typecasting
+float int_to_float_test1 = 5;
+int float_to_int_test2 = 5.4;
+
+
+// Conditionals
+if ()
+	{
+		// codeblock
+	}
+else if ()
+	{
+		// codeblock
+	}
+else
+	{
+		// codeblock
+	}
+
+
+// For
+for (i=1; 1<10; i++)
+	{
+		// codeblock
+	}
+
+// While
+while (true)
+	{
+		// codeblock
+	}
+
+
+// Functions
+void function_test1()
+	{
+		// codeblock
+	}
+
+int function_test2(int value)
+	{
+		return value;
+	}
+
+int return_value = function_test2(5);
+
+
+// Actions
+
+// Move
+Move(temp_GamePiece, temp_vector, temp_int);
+
+// Change
+Change(temp_GamePiece, temp_string, temp_string, temp_int)
