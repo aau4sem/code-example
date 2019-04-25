@@ -80,18 +80,17 @@ gp_test1.shape = "";
  
  
 // List
-List<int> list_int_test;
-List<float> list_float_test;
-List<bool> list_bool_test;
-List<vector> list_vector_test;
-List<GamePiece> list_gp_test;
-List<List<int>>;
+List[int] list_int_test;
+List[float] list_float_test;
+List[bool] list_bool_test;
+List[vector] list_vector_test;
+List[GamePiece] list_gp_test;
+List[List[int]];
 
-list_int_test.Add(5);
+
 list_int_test[1] = 4;
 temp_int = list_int_test[1];
-list_int_test.RemoveAt(1);
-temp_int = list_int_test.Size();
+temp_int = list_int_test.length;
 
 
 // Typecasting
