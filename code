@@ -81,26 +81,21 @@ gp_test1.label = "label_text";
 gp_test1.shape = "";
  
  
-// List
-List[int] list_int_test;
-List[float] list_float_test;
-List[bool] list_bool_test;
-List[vector] list_vector_test;
-List[GamePiece] list_gp_test;
+// Array
+int[10] arr_int_test;
+float[10] arr_float_test;
+bool[10] arr_bool_test;
+vector[10] arr_vector_test;
+GamePiece[10] arr_gp_test;
 
-List[List[int]] lists_in_list_test;
-lists_in_list_test[0] = List[int] elem1;
-lists_in_list_test[1] = List[int] elem2;
+int[2][2] mul_arr_test;
 
-lists_in_list_test[0][0] = 3;
-lists_in_list_test[0][1] = 7;
-lists_in_list_test[1][0] = lists_in_list_test[0][1];
+mul_arr_test[0][0] = 1; 
+mul_arr_test[0][1] = 2;
+mul_arr_test[1][0] = 3;
+mul_arr_test[1][1] = 4;
 
-temp_int = lists_in_list[1][0];
 
-list_int_test[1] = 4;
-temp_int = list_int_test[1];
-temp_int = list_int_test.length;
 
 
 // Typecasting
