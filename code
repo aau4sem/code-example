@@ -30,6 +30,7 @@ int int_mod_test = int_test1 % int_test2;
 temp_bool = int_test1 < int_test2;
 temp_bool = int_test1 > int_test2;
 temp_bool = int_test1 == int_test2;
+temp_int = -23;
 
 // Float
 float float_test1 = 2.4;
@@ -41,6 +42,7 @@ float float_div_test = float_test1 / float_test2;
 temp_bool = float_test1 < float_test2;
 temp_bool = float_test1 > float_test2;
 temp_bool = float_test1 == float_test2;
+temp_float = -2.3;
 
 // Bool
 bool bool_test1 = true;
