@@ -85,8 +85,16 @@ List[float] list_float_test;
 List[bool] list_bool_test;
 List[vector] list_vector_test;
 List[GamePiece] list_gp_test;
-List[List[int]];
 
+List[List[int]] lists_in_list_test;
+lists_in_list_test[0] = List[int] elem1;
+lists_in_list_test[1] = List[int] elem2;
+
+lists_in_list_test[0][0] = 3;
+lists_in_list_test[0][1] = 7;
+lists_in_list_test[1][0] = lists_in_list_test[0][1];
+
+temp_int = lists_in_list[1][0];
 
 list_int_test[1] = 4;
 temp_int = list_int_test[1];
@@ -96,6 +104,7 @@ temp_int = list_int_test.length;
 // Typecasting
 float int_to_float_test1 = 5;
 int float_to_int_test2 = 5.4;
+// need more
 
 
 // Conditionals
