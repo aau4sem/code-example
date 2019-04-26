@@ -52,7 +52,7 @@ temp_bool = bool_test1 == bool_test2;
 
 //String
 string string_test1 = "";
-strign string_test2 = "qwerty";
+string string_test2 = "qwerty";
 bool_temp = string_test1 == string_test2;
 
 // Vector
@@ -141,4 +141,4 @@ int return_value = function_test2(5);
 Move(temp_GamePiece, temp_vector, temp_int);
 
 // Change
-Change(temp_GamePiece, temp_string, temp_string, temp_int)
+Change(temp_GamePiece, temp_string, temp_string, temp_int);
