@@ -60,18 +60,13 @@ string_temp = "qwerty";
 bool_temp = string_temp == string_temp;
 
 // Vector
-vector temp = (1, 2);
-vector temp = (4, 3, 5);
-vector temp = vector temp + vector temp;
-vector temp = vector temp - vector temp;
-bool_temp = vector temp == vector temp;
+temp_vector = (1, 2);
+temp_vector = (4, 3, 5);
+temp_vector = temp_vector + temp_vector;
+temp_vector = temp_vector - temp_vector;
+bool_temp = temp_vector == temp_vector;
 
-//vector vector_mul_test = vector_test1 * vector_test2;
-//magnitude
-//scaling
-//dot
-//cross
-
+// GamePice
 temp_GamePiece.postion = (1,2);
 temp_GamePiece.size = 5;
 temp_GamePiece.color = "";
