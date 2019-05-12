@@ -67,10 +67,10 @@ temp_vector = temp_vector - temp_vector;
 bool_temp = temp_vector == temp_vector;
 
 // GamePice
-temp_GamePiece.postion = (1,2);
+temp_GamePiece.position = (1,2);
 temp_GamePiece.size = 5;
 temp_GamePiece.color = "";
-temp_GamePiece.opasity = 0.5;
+temp_GamePiece.opacity = 0.5;
 temp_GamePiece.label = "label_text";
 temp_GamePiece.shape = "";
  
