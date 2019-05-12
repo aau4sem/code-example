@@ -113,14 +113,8 @@ while (true)
 
 
 // Procedures
-procedure_test1()
-	{
-		// codeblock
-	};
-procedure_test2(5, "test")
-	{
-		// codeblock
-	};
+procedure_test1();
+procedure_test2(5, "test");
 
 
 // Actions
