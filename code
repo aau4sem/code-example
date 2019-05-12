@@ -94,14 +94,14 @@ float_to_int_test2 = 5.4;
 
 
 // Conditionals
-if ()
+if (true)
 	{
 		// codeblock
 	}
 else
 	{
 		// codeblock
-	}
+	};
 
 
 
@@ -109,18 +109,18 @@ else
 while (true)
 	{
 		// codeblock
-	}
+	};
 
 
 // Procedures
 procedure_test1()
 	{
 		// codeblock
-	}
+	};
 procedure_test2(5, "test")
 	{
 		// codeblock
-	}
+	};
 
 
 // Actions
