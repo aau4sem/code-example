@@ -1,87 +1,13 @@
-// Code example for Tactic
-// The purpose of this code example is to showcase the language and it can be used as a test for the parser.
-
-
-// Setting the background image. Several images are allowed and used to show different levels (or floors) of the map
-
-levels[0] = "\some\path\pictures1.jpg";
-levels[1] = "\some\path\pictures2.jpg";
-
-// If no images are selected the background will be white.
-
-// Declaration
 int temp_int;
 float temp_float;
 bool temp_bool;
-string_temp;
+string string_temp;
 vector temp_vector;
 GamePiece temp_GamePiece;
 
+float int_to_float_test1;
+int float_to_int_test2;
 
-// Build-in types
-// Int
-int int_test1 = 2;
-int int_test2 = int_test1 + 3;
-int int_add_test = int_test1 + int_test2;
-int int_sub_test = int_test1 - int_test2;
-int int_mul_test = int_test1 * int_test2;
-int int_div_test = int_test1 / int_test2;
-int int_mod_test = int_test1 % int_test2;
-temp_bool = int_test1 < int_test2;
-temp_bool = int_test1 > int_test2;
-temp_bool = int_test1 == int_test2;
-temp_int = -23;
-
-// Float
-float float_test1 = 2.4;
-float float_test2 = float_test1 + 4.3;
-float float_add_test = float_test1 + float_test2;
-float float_sub_test = float_test1 - float_test2;
-float float_mul_test = float_test1 * float_test2;
-float float_div_test = float_test1 / float_test2;
-temp_bool = float_test1 < float_test2;
-temp_bool = float_test1 > float_test2;
-temp_bool = float_test1 == float_test2;
-temp_float = -2.3;
-
-// Bool
-bool bool_test1 = true;
-bool bool_test2 = false;
-bool bool_or_test = bool_test1 + bool_test2;
-bool bool_and_test = bool_test1 * bool_test2;
-bool bool_not_test = !true;
-temp_bool = bool_test1 == bool_test2;
-
-//String
-string string_test1 = "";
-string string_test2 = "qwerty";
-bool_temp = string_test1 == string_test2;
-
-// Vector
-vector vector_test1 = (1, 2);
-vector vector_test2 = (4, 3, 5);
-vector vector_add_test = vector_test1 + vector_test2;
-vector vector_sub_test = vector_test1 - vector_test2;
-bool_temp = vector_test1 == vector_test2;
-
-//vector vector_mul_test = vector_test1 * vector_test2;
-//magnitude
-//scaling
-//dot
-//cross
-
-// GamePieces
-// Only object that needs seperate declaration.
-GamePiece gp_test1;
-gp_test1.postion = (1,2);
-gp_test1.size = 5;
-gp_test1.color = "";
-gp_test1.opasity = 0.5;
-gp_test1.label = "label_text";
-gp_test1.shape = "";
- 
- 
-// Array
 int[10] arr_int_test;
 float[10] arr_float_test;
 bool[10] arr_bool_test;
@@ -90,26 +16,85 @@ GamePiece[10] arr_gp_test;
 
 int[2][2] mul_arr_test;
 
+procedure_test1(){};
+procedure_test2(int x, string b){};
+
+// Build-in types
+// Int
+temp_int = 2;
+temp_int = temp_int + 3;
+temp_int = temp_int + temp_int;
+temp_int = temp_int - temp_int;
+temp_int = temp_int * temp_int;
+temp_int = temp_int / temp_int;
+temp_int = temp_int % temp_int;
+temp_bool = temp_int < temp_int;
+temp_bool = temp_int > temp_int;
+temp_bool = temp_int == temp_int;
+temp_int = -23;
+
+// Float
+temp_float = 2.4;
+temp_float = temp_float + 4.3;
+temp_float = temp_float + temp_float;
+temp_float = temp_float - temp_float;
+temp_float = temp_float * temp_float;
+temp_float = temp_float / temp_float;
+temp_bool = temp_float < temp_float;
+temp_bool = temp_float > temp_float;
+temp_bool = temp_float == temp_float;
+//temp_float = -2.3;
+
+// Bool
+temp_bool = true;
+temp_bool = false;
+temp_bool = temp_bool || temp_bool;
+temp_bool = temp_bool && temp_bool;
+temp_bool = temp_bool != true;
+temp_bool = temp_bool != false;
+temp_bool = temp_bool == temp_bool;
+
+//String
+string_temp = "";
+string_temp = "qwerty";
+bool_temp = string_temp == string_temp;
+
+// Vector
+vector temp = (1, 2);
+vector temp = (4, 3, 5);
+vector temp = vector temp + vector temp;
+vector temp = vector temp - vector temp;
+bool_temp = vector temp == vector temp;
+
+//vector vector_mul_test = vector_test1 * vector_test2;
+//magnitude
+//scaling
+//dot
+//cross
+
+temp_GamePiece.postion = (1,2);
+temp_GamePiece.size = 5;
+temp_GamePiece.color = "";
+temp_GamePiece.opasity = 0.5;
+temp_GamePiece.label = "label_text";
+temp_GamePiece.shape = "";
+ 
+ 
+// Array
 mul_arr_test[0][0] = 1; 
 mul_arr_test[0][1] = 2;
 mul_arr_test[1][0] = 3;
 mul_arr_test[1][1] = 4;
 
 
-
-
 // Typecasting
-float int_to_float_test1 = 5;
-int float_to_int_test2 = 5.4;
+int_to_float_test1 = 5;
+float_to_int_test2 = 5.4;
 // need more
 
 
 // Conditionals
 if ()
-	{
-		// codeblock
-	}
-else if ()
 	{
 		// codeblock
 	}
@@ -127,24 +112,21 @@ while (true)
 	}
 
 
-// Functions
-void function_test1()
+// Procedures
+procedure_test1()
 	{
 		// codeblock
 	}
-
-int function_test2(int value)
+procedure_test2(5, "test")
 	{
-		return value;
+		// codeblock
 	}
-
-int return_value = function_test2(5);
 
 
 // Actions
 
 // Move
-Move(temp_GamePiece, temp_vector, temp_int);
+move(temp_GamePiece, temp_vector, temp_int);
 
 // Change
-Change(temp_GamePiece, temp_string, temp_string, temp_int);
+change(temp_GamePiece, temp_string, temp_string, temp_int);
