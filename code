@@ -88,7 +88,7 @@ mul_arr_test[0][1] = 2;
 mul_arr_test[1][0] = 3;
 mul_arr_test[1][1] = 4;
 
-
+test_array[0][1][1][0][1][1][1] = 3;
 
 
 // Typecasting
