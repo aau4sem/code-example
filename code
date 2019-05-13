@@ -15,6 +15,7 @@ vector[10] arr_vector_test;
 GamePiece[10] arr_gp_test;
 
 int[2][2] mul_arr_test;
+int[2][2][2][2][2][2][2] test_array;
 
 procedure_test1(){};
 procedure_test2(int x, string b){};
@@ -76,10 +77,18 @@ temp_GamePiece.shape = "";
  
  
 // Array
+arr_int_test[0] = -6;
+arr_float_test[0] = 6.9;
+arr_bool_test[0] = true ;
+arr_vector_test[0] = (6, -8, 4);
+arr_gp_test[0] = temp_GamePiece;
+
 mul_arr_test[0][0] = 1; 
 mul_arr_test[0][1] = 2;
 mul_arr_test[1][0] = 3;
 mul_arr_test[1][1] = 4;
+
+
 
 
 // Typecasting
@@ -91,11 +100,17 @@ float_to_int_test2 = 5.4;
 // Conditionals
 if (true)
 	{
-		// codeblock
+		arr_int_test[0] = -6;
+		arr_float_test[0] = 6.9;
+		arr_bool_test[0] = true ;
+		arr_vector_test[0] = (6, -8, 4);
+		arr_gp_test[0] = temp_GamePiece;
 	}
 else
 	{
-		// codeblock
+		string_temp = "";
+		string_temp = "qwerty";
+		bool_temp = string_temp == string_temp;
 	};
 
 
@@ -103,7 +118,8 @@ else
 // While
 while (true)
 	{
-		// codeblock
+		procedure_test1();
+		procedure_test2(5, "test");
 	};
 
 
